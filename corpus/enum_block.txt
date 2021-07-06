@@ -10,7 +10,7 @@ end
 (program
   (type_declaration
     (scope)
-    (type_name)
+    (identifier)
     (enum_body)))
 
 ================================================================================
@@ -27,7 +27,7 @@ end
 (program
   (type_declaration
     (scope)
-    (type_name)
+    (identifier)
     (enum_body
       (string
         (string_content))
