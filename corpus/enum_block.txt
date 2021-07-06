@@ -9,6 +9,7 @@ end
 
 (program
   (type_declaration
+    (scope)
     (type_name)
     (enum_body)))
 
@@ -25,6 +26,7 @@ end
 
 (program
   (type_declaration
+    (scope)
     (type_name)
     (enum_body
       (string
@@ -43,6 +45,7 @@ end
 
 (program
   (enum_declaration
+    scope: (scope)
     name: (identifier)
     (enum_body)))
 
@@ -60,6 +63,7 @@ end
 
 (program
   (enum_declaration
+    scope: (scope)
     name: (identifier)
     (enum_body
       (string

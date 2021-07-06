@@ -8,6 +8,7 @@ local x: number
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -24,6 +25,7 @@ local x: number = 5
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -41,6 +43,7 @@ local x, y: number, string
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (var
@@ -61,6 +64,7 @@ local x, y: number, string = 23, "hi"
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (var
@@ -84,6 +88,7 @@ local x: string | number
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -103,6 +108,7 @@ local x: thread | {string:number} = {}
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -126,6 +132,7 @@ local x: foo.bar
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -143,6 +150,7 @@ local x: foo.bar.baz
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation

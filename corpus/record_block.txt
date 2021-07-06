@@ -9,6 +9,7 @@ end
 
 (program
   (type_declaration
+    scope: (scope)
     (type_name)
     (anon_record
       record_body: (record_body))))
@@ -24,6 +25,7 @@ end
 
 (program
   (record_declaration
+    scope: (scope)
     name: (identifier)
     record_body: (record_body)))
 
@@ -40,6 +42,7 @@ end
 
 (program
   (type_declaration
+    scope: (scope)
     (type_name)
     (anon_record
       record_body: (record_body
@@ -67,6 +70,7 @@ end
 
 (program
   (type_declaration
+    scope: (scope)
     (type_name)
     (anon_record
       record_body: (record_body
@@ -98,6 +102,7 @@ end
 
 (program
   (type_declaration
+    scope: (scope)
     (type_name)
     (anon_record
       record_body: (record_body
@@ -126,6 +131,7 @@ end
 
 (program
   (type_declaration
+    scope: (scope)
     (type_name)
     (anon_record
       (typeargs
@@ -148,6 +154,7 @@ end
 
 (program
   (type_declaration
+    scope: (scope)
     (type_name)
     (anon_record
       record_body: (record_body
@@ -173,6 +180,7 @@ end
 
 (program
   (type_declaration
+    scope: (scope)
     (type_name)
     (anon_record
       record_body: (record_body
@@ -205,6 +213,7 @@ end
 
 (program
   (record_declaration
+    scope: (scope)
     name: (identifier)
     record_body: (record_body
       (record_entry
@@ -225,6 +234,7 @@ end
 
 (program
   (record_declaration
+    scope: (scope)
     name: (identifier)
     record_body: (record_body
       (record_entry
@@ -247,6 +257,7 @@ end
 
 (program
   (record_declaration
+    scope: (scope)
     name: (identifier)
     record_body: (record_body
       (record_entry
@@ -266,6 +277,7 @@ end
 
 (program
   (record_declaration
+    scope: (scope)
     name: (identifier)
     record_body: (record_body
       (record_entry
@@ -285,6 +297,7 @@ end
 
 (program
   (record_declaration
+    scope: (scope)
     name: (identifier)
     record_body: (record_body
       (record_entry
@@ -306,6 +319,7 @@ end
 
 (program
   (record_declaration
+    scope: (scope)
     name: (identifier)
     record_body: (record_body
       (record_entry
@@ -326,6 +340,7 @@ end
 
 (program
   (record_declaration
+    scope: (scope)
     name: (identifier)
     record_body: (record_body
       (userdata))))
@@ -342,6 +357,7 @@ end
 
 (program
   (record_declaration
+    scope: (scope)
     name: (identifier)
     record_body: (record_body
       metamethod: (metamethod

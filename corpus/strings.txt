@@ -8,6 +8,7 @@ local x = "hello"
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -23,6 +24,7 @@ local x = 'hello'
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -38,6 +40,7 @@ local x = "he\"llo"
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -54,6 +57,7 @@ local x = 'he\'llo'
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -70,6 +74,7 @@ local x = "a %A"
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -86,6 +91,7 @@ local x = "%"
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -101,6 +107,7 @@ local x = [[hello]]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -116,6 +123,7 @@ local x = [==[hello]==]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -131,6 +139,7 @@ local x = [====[hello]====]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -146,6 +155,7 @@ local x = [==[ ]== ]==]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -161,6 +171,7 @@ local x = "-- stuff"
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -176,6 +187,7 @@ local x = '-- stuff'
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -204,6 +216,7 @@ local x = "a \u{123} b"
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -220,6 +233,7 @@ local x = [[ abcd %]]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -235,6 +249,7 @@ local x = [[ abcd %s ]]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string
@@ -251,6 +266,7 @@ local x = [[]]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (string)))

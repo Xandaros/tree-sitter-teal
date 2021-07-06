@@ -8,6 +8,7 @@ local x = 5
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (number)))
@@ -22,6 +23,7 @@ global x = 5
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (number)))
@@ -36,6 +38,7 @@ local x, y, z = 1, 2, 3
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (var
@@ -56,6 +59,7 @@ global x, y, z = 1, 2, "hey"
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (var
@@ -78,6 +82,7 @@ x = "hi"
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (string

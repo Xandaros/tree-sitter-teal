@@ -8,6 +8,7 @@ local x: {string}
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -25,6 +26,7 @@ local x: {string} = {}
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -43,6 +45,7 @@ local x: {string:number}
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -62,6 +65,7 @@ local x: {string:number} = {}
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -82,6 +86,7 @@ local x: {number, string}
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -101,6 +106,7 @@ local x: {number, string} = {}
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -121,6 +127,7 @@ local types_seen: {(number|string):boolean} = {}
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation

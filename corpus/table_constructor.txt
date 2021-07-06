@@ -8,6 +8,7 @@ local t = {}
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (table_constructor)))
@@ -22,6 +23,7 @@ local arr = {1, 2, 3}
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (table_constructor
@@ -45,6 +47,7 @@ local map = {
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (table_constructor
@@ -68,6 +71,7 @@ local map = {
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (table_constructor
@@ -95,6 +99,7 @@ local tab = {
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (table_constructor
@@ -125,6 +130,7 @@ local tl = {
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (table_constructor
@@ -162,6 +168,7 @@ local a = { b:c() }
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (table_constructor

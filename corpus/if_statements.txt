@@ -105,18 +105,21 @@ end
   (if_statement
     condition: (identifier)
     (var_declaration
+      scope: (scope)
       (var
         name: (identifier))
       (number))
     (elseif_block
       condition: (identifier)
       (var_declaration
+        scope: (scope)
         (var
           name: (identifier))
         (string
           content: (string_content))))
     (else_block
       (var_declaration
+        scope: (scope)
         (var
           name: (identifier))
         (table_constructor)))))

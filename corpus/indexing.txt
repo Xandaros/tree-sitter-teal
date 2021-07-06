@@ -8,6 +8,7 @@ local a = b[c]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (index
@@ -40,6 +41,7 @@ local a = b["hi"]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (index
@@ -57,6 +59,7 @@ local a = b["hi"][5]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (index
@@ -76,6 +79,7 @@ local a = b.c
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (index
@@ -92,6 +96,7 @@ local a = b.c[d].e.f[g]
 
 (program
   (var_declaration
+    (scope)
     (var
       (identifier))
     (index
@@ -116,6 +121,7 @@ local a = b:c()
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (function_call
@@ -134,6 +140,7 @@ local a = b[c].d.e[f]:g()
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     (function_call

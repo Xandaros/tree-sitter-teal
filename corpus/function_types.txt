@@ -8,6 +8,7 @@ local foo: function()
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -24,6 +25,7 @@ local foo: function(string)
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -43,6 +45,7 @@ local foo: function(): string
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -62,6 +65,7 @@ local foo: function(number): string
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -84,6 +88,7 @@ local foo: function(number, {string}, string)
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -110,6 +115,7 @@ local foo: function(): string, {number}, number, thread
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -136,6 +142,7 @@ local foo: function(number, {string}, string): string, {number}, number, thread
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -172,6 +179,7 @@ local foo: function(bar: number)
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -192,6 +200,7 @@ local foo: function(bar: number, baz: {string})
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -217,6 +226,7 @@ local foo: function(...: string)
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -236,6 +246,7 @@ local foo: function(number, string, ...: string)
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
@@ -261,6 +272,7 @@ local foo: function(): string...
 
 (program
   (var_declaration
+    scope: (scope)
     (var
       name: (identifier))
     type_annotation: (type_annotation
