@@ -9,6 +9,8 @@ local x = 5;
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
-    (number)))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
+    initializers: (expressions
+      (number))))

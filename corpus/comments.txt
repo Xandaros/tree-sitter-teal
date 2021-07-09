@@ -61,10 +61,12 @@ local x --[[ This is a comment ]] = 5
 (program
   (var_declaration
     (scope)
-    (var
-      (identifier))
+    (var_declarators
+      (var
+        (identifier)))
     (comment)
-    (number)))
+    (expressions
+      (number))))
 
 ================================================================================
 line comment that starts with --[
@@ -79,9 +81,11 @@ local x = 5
   (comment)
   (var_declaration
     (scope)
-    (var
-      (identifier))
-    (number)))
+    (var_declarators
+      (var
+        (identifier)))
+    (expressions
+      (number))))
 
 ================================================================================
 line comment with whitespace -- [[
@@ -96,9 +100,11 @@ local x = 5
   (comment)
   (var_declaration
     (scope)
-    (var
-      (identifier))
-    (number)))
+    (var_declarators
+      (var
+        (identifier)))
+    (expressions
+      (number))))
 
 ================================================================================
 Shebang comment

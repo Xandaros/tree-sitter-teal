@@ -9,8 +9,9 @@ local foo: function()
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments)))))
@@ -26,8 +27,9 @@ local foo: function(string)
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments
@@ -46,8 +48,9 @@ local foo: function(): string
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments)
@@ -66,8 +69,9 @@ local foo: function(number): string
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments
@@ -89,8 +93,9 @@ local foo: function(number, {string}, string)
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments
@@ -116,8 +121,9 @@ local foo: function(): string, {number}, number, thread
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments)
@@ -143,8 +149,9 @@ local foo: function(number, {string}, string): string, {number}, number, thread
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments
@@ -180,8 +187,9 @@ local foo: function(bar: number)
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments
@@ -201,8 +209,9 @@ local foo: function(bar: number, baz: {string})
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments
@@ -227,8 +236,9 @@ local foo: function(...: string)
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments
@@ -247,8 +257,9 @@ local foo: function(number, string, ...: string)
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments
@@ -273,8 +284,9 @@ local foo: function(): string...
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (function_type
         arguments: (arguments)

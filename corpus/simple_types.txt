@@ -9,8 +9,9 @@ local x: number
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (simple_type
         name: (identifier)))))
@@ -26,12 +27,14 @@ local x: number = 5
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (simple_type
         name: (identifier)))
-    (number)))
+    initializers: (expressions
+      (number))))
 
 ================================================================================
 Local declaration of multiple variables
@@ -44,10 +47,11 @@ local x, y: number, string
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier))
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (simple_type
         name: (identifier))
@@ -65,18 +69,20 @@ local x, y: number, string = 23, "hi"
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier))
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (simple_type
         name: (identifier))
       (simple_type
         name: (identifier)))
-    (number)
-    (string
-      content: (string_content))))
+    initializers: (expressions
+      (number)
+      (string
+        content: (string_content)))))
 
 ================================================================================
 Union
@@ -89,8 +95,9 @@ local x: string | number
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (type_union
         (simple_type
@@ -109,8 +116,9 @@ local x: thread | {string:number} = {}
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (type_union
         (simple_type
@@ -120,7 +128,8 @@ local x: thread | {string:number} = {}
             name: (identifier))
           value_type: (simple_type
             name: (identifier)))))
-    (table_constructor)))
+    initializers: (expressions
+      (table_constructor))))
 
 ================================================================================
 Type indexing
@@ -133,8 +142,9 @@ local x: foo.bar
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (type_index
         (identifier)
@@ -151,8 +161,9 @@ local x: foo.bar.baz
 (program
   (var_declaration
     scope: (scope)
-    (var
-      name: (identifier))
+    declarators: (var_declarators
+      (var
+        name: (identifier)))
     type_annotation: (type_annotation
       (type_index
         (type_index
